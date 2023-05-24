@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기본문법</title>
+    <style>
+        p {
+            color: red ;
+        }
+        .center { 
+        color: blue;
+       }
+
+       #center {
+        color: green;
+
+       } 
+        h1,h3{ /*이렇게 두가지 태그를 선택해서 만들수도 있음*/
+            text-align: center; /*텍스트의 정렬방향*/
+            color: violet;
+        }
+        #class{
+            color: salmon;
+        }
+        /* * { /*전체 선택자
+            color: gold ;
+        } */
+        ul{
+            font-size: 20px;
+            list-style: disc; /*list style를 설정하여 점 ? 스타일 설정 가능*/
+            text-align: right; /*텍스트의 정렬방향*/
+            float: left; /*텍스트 외 다른 것들도 함께 정렬, 예를 들면 점..같은 거  */
+        }
+        li.bebe {
+            color: blue;
+        }
+        ol{
+            list-style: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="center">태국 방콕에서 프론트엔드</h1> -->
+    <span style="color: red;">코딩캠프??????</span>
+    <span class="center" id="center" >퍼블리싱</span>
+    <span id="center">오늘 금요일</span>            
+    <span id="class" class="center" style="color: aqua;">오늘 날씨 흐림</span>
+    <span class="center">5월19일</span>
+    <span id="center" style="color: blueviolet;" >초콜릿 먹고싶다</span>
+    <br>
+    <br>
+    <br>
+    <p>코딩캠프??????</p>
+    <p class="center" id="center" style="color: orange;">퍼블리싱</p>
+    <p id="center">오늘 금요일</p>            
+    <p id="center" class="center" style="color: blueviolet;">오늘 날씨 흐림</p>
+    <p>5월19일</p>
+    <p>초콜릿 먹고싶다</p>
+    <br>
+    <h1>이오</h1>
+    <h3>인공눈물</h3>
+    <br>
+    <ul>
+        <li class="bebe">베베토</li>
+        <li>트윅스</li>
+        <li>바크콜</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ol>
+        <li>하리보</li>
+        <li>킨더</li>
+        <li>자허블</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실제크기계산</title>
+</head>
+<style>
+    .box{
+        width: 600px;
+        height: 100px;
+        background-color: lightblue;
+         border: 10px solid salmon;
+         padding: 20px;
+        box-sizing: border-box; 
+    }
+</style>
+<body>
+    <div class="box">
+        box-sizing: border-box;
+    </div>
+</body>
+</html>
+
+<!--레이아웃 잡을 때 float를 해서 위치를 선택하고 padding border때문에 안먹힐 때 쓰는 거임
+예를 들어 width를 머.. 100으로 정해도 padding 값과 border이 더해져서 계산이 되기 때문에
+그래서 box-sizing:border-box를 쓰면 됨 !  -->
+<!--또 왼쪽으로 정렬할 때 float를 했는데 한줄에 적용이 안되고 한줄 밑에 되는 경우도 있음 (이유width쓴 거랑 안맞아서) 그때도 쓰면 좋다-->

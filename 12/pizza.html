@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>피자배달</title>
+</head>
+<body>
+    <form method="post">
+    <table>
+        <th>피자주문</th>
+        <tr>
+            <td>고객명 : </td>
+            <td><input type="text" name="costomer_name"></td>
+        </tr>
+        <tr>
+            <td>전화번호 : </td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>이메일 : </td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+        <hr>
+    <table>
+        <tr>
+            <td><label for="pizza">피자메뉴 선택 : </label></td>
+                <td>
+                    <select name="pizza" id="pizza">
+                        <option value="페퍼로니">페퍼로니</option>
+                        <option value="포테이토">포테이토</option>
+                        <option value="콘">콘</option>
+                    </select> 
+                </td>
+        </tr>
+    </table>
+    <table>
+            <tr>
+                <td>피자 사이즈 : </td>
+            </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" id="s">
+                        <label for="s">Smail</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" id="m">
+                        <label for="m">Medium</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" id="l">
+                        <label for="l">Large</label></td> 
+                    </td>
+                </tr>
+            </tr>  
+            <tr>
+                <td>토핑선택 : </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="topping" id="a">
+                    <label for="a">베이컨</label>
+                
+                
+                    <input type="checkbox" name="topping" id="b">
+                    <label for="b">치즈</label>
+                
+                    <input type="checkbox" name="topping" id="c">
+                    <label for="c">양파</label>
+                
+                    <input type="checkbox" name="topping" id="d">
+                    <label for="d">버섯</label>
+                </td>
+            </tr>
+    </table>
+        <hr>
+        <table>
+            <tr>
+                <td>희망배송시간 : </td>
+             <td>
+                <input type="time" name="delivery_time" id="delivery">
+             </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>배송시 요청사항 :</td>
+            <td>
+                <input type="text" name="requset" id="box"
+                placeholder="요청사항을 입력하세요 ! "  style="width:200px;height:50px;font-size:15px;">
+            </td>
+            </tr>
+        </table>
+        <table>
+            <button name="submit">주문하기</button>
+        </table>
+</form>
+</body>
+</html>

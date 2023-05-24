@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내가 제일 몰랐던 부분</title>
+</head>
+<style>
+    img{
+        display: block; /*이렇게 작성하면 inline요소인 img를 block로 변경 가능*/
+    }
+    div{
+        
+        width: 300px;
+        height: 300px;
+        
+        /*그렇다면 inline배치를 하려면 어떻게 해야될까?*/
+        /*img에서 했던 방법으로 display: inline;이거 해주면 */
+        /* block인 div태그를 inline으로 설정하면 화면에 안나타남 이유: inline은 w/h 가질 수 없음 */
+        /*float: left; /*이거만 단독으로 쓰거나*/
+        /*display: inline-block; /*inline과 block의 중간성격인 얘를 쓰기*/
+
+
+
+        border-top:20px solid blue ;
+        border-bottom: 10px solid red;
+        border-left:5px solid orange ;
+        border-right: 15px solid greenyellow;
+        outline: 5px solid gray;
+
+
+    }
+
+</style>
+<body>
+    <img src="https://t3.ftcdn.net/jpg/01/69/51/98/240_F_169519820_NbCSoI1VZHD4AnutZp6RNczt7zH9REfe.jpg">
+    <img src="https://t3.ftcdn.net/jpg/03/28/98/68/240_F_328986893_2NIin27U0K6vShFpSi6uQO82hnAsWgJP.jpg">
+    <img src="https://t4.ftcdn.net/jpg/01/63/53/57/240_F_163535721_QA6JDThmVtdCddVL1hu989O3OPa5b8br.jpg">
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
+
+
+<!-- block(div/p)요소와 inline(span/a/img)요소에 대한 이해가 필요  -->
+<!--border설정하는 것도 알 수 있음 -->
